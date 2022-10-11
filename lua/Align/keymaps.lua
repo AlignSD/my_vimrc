@@ -5,6 +5,8 @@ local term_opts = { silent = true }
 -- shorten function name
 local keymap = vim.api.nvim_set_keymap
 
+-- fuckin windows can't handle a good ol'fashioned Ctrl-Z
+keymap("", "<C-z>", "", { noremap = true })
 -- remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
