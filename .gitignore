@@ -1,2 +1,5 @@
 # Plugin folder
 plugin/
+
+# Session.vim file
+.Session.vim
