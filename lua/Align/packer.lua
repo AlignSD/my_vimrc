@@ -37,10 +37,24 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim"       -- Popup API from vim for Neovim
     use "nvim-lua/plenary.nvim"     -- useful lua functions used by lots of plugins
 
+    -- CMP Plugins
+    use "hrsh7th/nvim-cmp"              -- The completion plugin
+    use "hrsh7th/cmp-buffer"            -- buffer completions 
+    use "hrsh7th/cmp-path"              -- path completions
+    use "hrsh7th/cmp-cmdline"           -- cmdline completions
+    use "saadparwaiz1/cmp_luasnip"      -- snippet completions
+
+    -- Snippet Engine
+    use({                               -- snippet engine
+        "L3MON4D3/LuaSnip",
+        tag = "v<CurrentMajor>.*"
+    })     
+    use "rafamadriz/friendly-snippets"  -- a bunch of snippets
+
     -- Markdown Preview Plugin
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     -- Themes
-    use "gruvbox-community/gruvbox"
+   use "gruvbox-community/gruvbox"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

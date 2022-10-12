@@ -9,4 +9,4 @@
 
 ### Important For Windows Users
  - Windows can't handle the default Ctrl-Z binding for NeoVim which is supposed to suspend the application.
- I have decided to just unmap it to prevent unwanted freezes and/or lost work.
+   I have decided to just unmap it to prevent unwanted freezes and/or lost work.
